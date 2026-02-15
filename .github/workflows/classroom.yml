@@ -73,7 +73,5 @@ jobs:
 
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
-      env:
-        runners: check_package_file,check_package_content,check_coverage_file,check_coverage_content,check_test_uncommented
       with:
         runners: check_package_file,check_package_content,check_coverage_file,check_coverage_content,check_test_uncommented

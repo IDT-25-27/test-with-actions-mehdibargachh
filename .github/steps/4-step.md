@@ -15,10 +15,10 @@ Let's fix this to avoid anyone (accidentally) bypassing verification.
 
    - **Ruleset Name:** `Protect main`
    - **Enforcement status:** `Active`
-   - **Target branches:**
+   - **Target branches:** (Add Target)
      - **Include default branch**
      - **Include by pattern:** `main`
-   - **Require status checks to pass**: ☑️ Checked
+   - **Require status checks to pass**: ☑️ (Add Checks)
      - `python-coverage`
 
    <br/>
@@ -33,7 +33,7 @@ Let's fix this to avoid anyone (accidentally) bypassing verification.
 
 1. Navigate back to the pull request and refresh the page.
 
-1. Scroll to the bottom to find failed workflows and the **Merge** button now disabled! Nice! 🥰
+1. Scroll to the bottom to find failed workflows and the **Merge** button is now disabled! Nice! 🥰
 
    <img width="500" alt="failed tests and disabled merge button" src="https://github.com/IDT-25-27/idt-25-27-classroom-173794-test-with-actions-test-with-actions-1/blob/main/.github/images/failed-tests-disabled-merge.png?raw=true" />
 
@@ -42,7 +42,7 @@ Let's fix this to avoid anyone (accidentally) bypassing verification.
 
 ### Activity: Fix the broken test
 
-Lets investigate why our testing workflow failed. Is it misconfigured or is some code bac? Maybe there was a reason that test was disabled?!
+Lets investigate why our testing workflow failed. Is it misconfigured or is some code bad? Maybe there was a reason that test was disabled?!
 
 1. Click on the `Python Coverage` workflow to view the logs. It will automatically navigate to the failed logs.
 
@@ -84,16 +84,9 @@ With our test corrected, we are now getting coverage results.
 Unfortunately it is below the 90% requirement.
 Let's add some more tests to increase coverage.
 
-1. Let's ask GitHub Copilot to find missing test cases. Alternately, you can expand the manual steps below.
+1. Let's add 2 tests to increase coverage.
+Alternately, you can ask GitHub Copilot to find missing test cases by expanding the prompt below.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > Hey Copilot, the test coverage is too low. Please find the missing tests to get us to 100% coverage.
-   > ```
-
-   <details>
-   <summary>🪧 <b>Show:</b> Manual steps</summary>
 
    1. Open the `tests/calculations_test.py` file.
 
@@ -120,6 +113,15 @@ Let's add some more tests to increase coverage.
          with pytest.raises(ValueError):
             get_nth_fibonacci(n)
       ```
+
+   <details>
+   <summary>🪧 <b>Show:</b> Prompt</summary>
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Hey Copilot, the test coverage is too low. Please find the missing tests to get us to 100% coverage.
+   > ```
 
    </details>
 

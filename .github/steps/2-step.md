@@ -28,11 +28,11 @@ You can explore all of the configuration options in the [GitHub Actions Docs](ht
 
    <img width="250" alt="image" src="https://github.com/IDT-25-27/idt-25-27-classroom-173794-test-with-actions-test-with-actions-1/blob/main/.github/images/new-workflow-button.png?raw=true" />
 
-1. Enter `python` into the search box and click the **Enter** button.
+1. Enter `python package` into the search box and click the **Enter** button.
 
-   <img width="300" alt="search box with 'python' value" src="https://github.com/IDT-25-27/idt-25-27-classroom-173794-test-with-actions-test-with-actions-1/blob/main/.github/images/python-search-box.png?raw=true" />
+   <img width="300" alt="search box with 'python package' value" src="https://github.com/IDT-25-27/idt-25-27-classroom-173794-test-with-actions-test-with-actions-1/blob/main/.github/images/python-search-box.png?raw=true" />
 
-1. Find the **Python package** workflow and click the **Configure** button to open a file editor with a pre-made workflow.
+1. Find the **Python package** workflow and click the **Configure** button to open a file editor with a pre-made workflow. (Don't select the one using Anaconda)
 
    <img width="250" alt="image" src="https://github.com/IDT-25-27/idt-25-27-classroom-173794-test-with-actions-test-with-actions-1/blob/main/.github/images/python-package-configure.png?raw=true" />
 

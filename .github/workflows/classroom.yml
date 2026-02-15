@@ -73,5 +73,11 @@ jobs:
 
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        CHECK_PACKAGE_FILE_RESULTS: "${{steps.check_package_file.outputs.result}}"
+        CHECK_PACKAGE_CONTENT_RESULTS: "${{steps.check_package_content.outputs.result}}"
+        CHECK_COVERAGE_FILE_RESULTS: "${{steps.check_coverage_file.outputs.result}}"
+        CHECK_COVERAGE_CONTENT_RESULTS: "${{steps.check_coverage_content.outputs.result}}"
+        CHECK_TEST_UNCOMMENTED_RESULTS: "${{steps.check_test_uncommented.outputs.result}}"
       with:
-        runners: check_package_file,check_package_content,check_coverage_file,check_coverage_content,check_test_uncommented
+        runners: 'check_package_file,check_package_content,check_coverage_file,check_coverage_content,check_test_uncommented'
